@@ -137,7 +137,21 @@ $("#window-cancel").on("click", function() {
 clearTimeout(windowTimeout);
 });
 
-// * The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+function checkAnswer(myval) {
+    if (myval == 0) {
+        alert ("Wrong answer!");
+    } else {
+        alert ("Correct Answer!");
+    }
+}
 
-// * Don't let the player pick more than one answer per question.
+  
+///// Psuedo coding my final steps
+
+
+ // Call to the scoreboard so the buttons reflect the correct and incorrect answers
+
+// Get time counter to stop at 00:00 and not loop back to 5:00 and game to end
+
+// Don't let the player pick more than one answer per question.
 
