@@ -102,6 +102,13 @@ console.log(questions[i].answer)
 console.log(questions[i].correctAnswer)
 
 }
-//
-//HOW DO I APPEND HTML ELEMENTS
-
+var delayButtonAlert;
+var windowTimeout = setTimeout(function(){
+alert("Welcome to Billboard Trivia!");
+}, 1000);
+$("#cancel").on("click", function() {
+clearTimeout(delayButtonAlert);
+});
+$("#window-cancel").on("click", function() {
+clearTimeout(windowTimeout);
+});       
