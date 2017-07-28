@@ -1,43 +1,78 @@
 var correctAnswer
 var answer
+
 var questions = [{
-question:  "What is the only song to go #1 on the Billboard Top 100 In 2010 out of your options below?",
-answer: ["None", "Kanye West - Power", "Big Boi - Shutterbug", "Lil' Wayne - She Will", "Eminem - Not Afraid", "Young Money - Bedrock"],
+question:  "01. What is the only song to go #1 on the Billboard Top 100 In 2010 out of your options below?",
+answer: ["<button>None</button>", 
+"<button>Kanye West - Power</button>", 
+"<button>Big Boi - Shutterbug</button>", 
+"<button>Lil' Wayne - She Will</button>", 
+"<button>Eminem - Not Afraid</button>", 
+"<button>Young Money - Bedrock</button>"],
 correctAnswer: "None"
 // insert jpeg
 }, {
-question: "What is the only song to go #1 on the Billboard Top 100 In 2011 out of your options below?",
-answer: ["Nicki Minaj - Super Bass", "Lil' Wayne - She Will", "Dr. Dre - I Need A Doctor", "Bad Meets Evil - Lighters", "Wiz Khalifa - Black & Yellow"],
+question: "02. What is the only song to go #1 on the Billboard Top 100 In 2011 out of your options below?",
+answer: ["<button>Nicki Minaj - Super Bass</button>", 
+"<button>Lil' Wayne - She Will</button>", 
+"<button>Dr. Dre - I Need A Doctor</button>", 
+"<button>Bad Meets Evil - Lighters</button>", 
+"<button>Wiz Khalifa - Black & Yellow</button>"],
 correctAnswer: "Wiz Khalifa - Black & Yellow"
 // insert jpeg
 }, {
-question: "What is the only song to go #1 on the Billboard Top 100 In 2012 out of your options below?",
-answer: ["Flo-Rida - Whistle", "Psy - Gangnam Style", "Flo-Rida - Good Feeling", "Nicki Minaj - Turn Me On", "Kanye West & Jay-Z - Otis"],
+question: "03. What is the only song to go #1 on the Billboard Top 100 In 2012 out of your options below?",
+answer: ["<button>Flo-Rida - Whistle</button>", 
+"<button>Psy - Gangnam Style</button>", 
+"<button>Flo-Rida - Good Feeling</button>", 
+"<button>Nicki Minaj - Turn Me On</button>", 
+"<button>Kanye West & Jay-Z - Otis</button>"],
 correctAnswer: "Flo-Rida - Whistle"
 // insert jpeg
 }, {
-question: "What is the only song to go #1 on the Billboard Top 100 In 2013 out of your options below?",
-answer: ["Macklemore & Ryan Lewis - Thrift Shop", "Eminem - Berzerk", "Jay-Z - Holy Grail", "Drake - Started From The Bottom", "Kanye West - Bound 2"],
+question: "04. What is the only song to go #1 on the Billboard Top 100 In 2013 out of your options below?",
+answer: ["<button>Macklemore & Ryan Lewis - Thrift Shop</button>", 
+"<button>Eminem - Berzerk</button>", 
+"<button>Jay-Z - Holy Grail</button>", 
+"<button>Drake - Started From The Bottom</button>", 
+"<button>Kanye West - Bound 2</button>"],
 correctAnswer: "Macklemore & Ryan Lewis - Thrift Shop"
 // insert jpeg
 }, {
-question: "What is the only song to go #1 on the Billboard Top 100 In 2014 out of your options below?", 
-answer: ["Nicki Minaj - Anaconda", "DJ Snake - Turn Down For What", "Iggy Azalea - Fancy", "Rich Gang - Lifestyle", "Pitbull - Wild Wild Love"],
+question: "05. What is the only song to go #1 on the Billboard Top 100 In 2014 out of your options below?", 
+answer: ["<button>Nicki Minaj - Anaconda</button>", 
+"<button>DJ Snake - Turn Down For What</button>", 
+"<button>Iggy Azalea - Fancy</button>", 
+"<button>Rich Gang - Lifestyle</button>", 
+"<button>Pitbull - Wild Wild Love</button>"],
 correctAnswer: "Iggy Azalea - Fancy"
 // insert jpeg
 }, {
-question: "What is the only song to go #1 on the Billboard Top 100 In 2015 out of your options below?", 
-answer: ["Drake - Hotline Bling", "Wiz Khalifa - See You Again", "Fetty Wap - Trap Queen", "Silento - Watch Me", "T-Wayne - Nasty Freestyle"],
+question: "06. What is the only song to go #1 on the Billboard Top 100 In 2015 out of your options below?", 
+answer: ["<button>Drake - Hotline Bling</button>", 
+"<button>Wiz Khalifa - See You Again</button>", 
+"<button>Fetty Wap - Trap Queen</button>", 
+"<button>Silento - Watch Me</button>", 
+"<button>T-Wayne - Nasty Freestyle</button>"],
 correctAnswer: "Wiz Khalifa - See You Again"
 // insert jpeg
 }, {
-question: "What is the only song to go #1 on the Billboard Top 100 In 2016 out of your options below?", 
-answer: ["Flo-Rida - My House", "Desiigner - Panda", "Drake - Summer Sixteen","J. Cole - De Ja Vu", "Kent Jones - Don't Mind"],
+question: "07. What is the only song to go #1 on the Billboard Top 100 In 2016 out of your options below?", 
+answer: ["<button>Flo-Rida - My House</button>", 
+"<button>Desiigner - Panda</button>", 
+"<button>Drake - Summer Sixteen</button>",
+"<button>J. Cole - De Ja Vu</button>", 
+"<button>Kent Jones - Don't Mind</button>"],
 correctAnswer: "Desiigner - Panda"
 // insert jpeg
 }, {
-question: "What is the only song to go #1 on the Billboard Top 100 In 2017 out of your options below?",
-answer: ["Future - Mask Off", "Migos - Bad & Boujee", "Kendrick Lamar - DNA", "Big Sean - Bounce Back", "Machine Gun Kelly - Bad Things"],
+question: "08. What is the only song to go #1 on the Billboard Top 100 In 2017 out of your options below?",
+answer: ["<button>Future - Mask Off</button>", 
+"<button>Migos - Bad & Boujee</button>", 
+"<button>Kendrick Lamar - DNA</button>", 
+"<button>Big Sean - Bounce Back</button>", 
+"<button>Machine Gun Kelly - Bad Things</button"],
+correctAnswer: "Migos - Bad & Boujee"
 // insert jpeg
 }]
 //
@@ -57,8 +92,16 @@ score += 0;
 return score;
 }
 function returnScore(){
-alert("Your score is "+getScore()+"/10");
+alert("Your score is "+getScore()+"/08");
 }
+//
+for (var i = 0; i < questions.length; i++) {
+$('#test').append('<div>' + questions[i].question + '<br>' + questions[i].answer[0] + questions[i].answer[1] +
+questions[i].answer[2] + questions[i].answer[3] + questions[i].answer[4] + '<div><br>')
+console.log(questions[i].answer)
+console.log(questions[i].correctAnswer)
 
-
+}
+//
+//HOW DO I APPEND HTML ELEMENTS
 
