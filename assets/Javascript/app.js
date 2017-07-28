@@ -1,6 +1,30 @@
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var fiveMinutes = 60 * 5,
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+            secs--;
+            setTimeout('Decrement()', 1000);
+};
+
 var correctAnswer
 var answer
-
 var questions = [{
 question:  "01. What is the only song to go #1 on the Billboard Top 100 In 2010 out of your options below?",
 answer: ["<button>None</button>", 
@@ -111,4 +135,9 @@ clearTimeout(delayButtonAlert);
 });
 $("#window-cancel").on("click", function() {
 clearTimeout(windowTimeout);
-});       
+});
+
+// * The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+
+// * Don't let the player pick more than one answer per question.
+
